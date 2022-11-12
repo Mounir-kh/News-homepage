@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+:root{
+--Soft-orange: hsl(35, 77%, 62%);
+--Soft-red: hsl(5, 85%, 63%);
+--Off-white: hsl(36, 100%, 99%);
+--Grayish-blue: hsl(233, 8%, 79%);
+--Dark-grayish-blue: hsl(236, 13%, 42%);
+--Very-dark-blue: hsl(240, 100%, 5%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    padding: 2%;
+    font-family: 'Inter', sans-serif;
+}
+/*Header properties*/
+header{
+    padding: 1%;
+    align-items: center;
+    padding-bottom: 3%;
+}
+header >ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+ 
+
+
+
+/*Main content properties*/
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 3%;
+}
+.image-desktop{
+    grid-column: 1/3 ;
+    grid-row: 1/2;
+}
+.image-desktop img{
+    height: 100%;
+    width: 100%;
+}
+.new{
+    grid-row: 1/3;
+    background-color:  hsl(240, 100%, 5%);
+    padding: 3%;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.new h2{
+    color:  hsl(35, 77%, 62%);
+    font-size: 50px;
+}
+.new h3{
+    padding-top: 5%;
+    color: white;
+}
+.new p {
+    color: hsl(236, 13%, 42%);
+    border-bottom: 2px solid  hsl(236, 13%, 42%);
+    padding-bottom: 4%;
+    padding-top: 4%;
+}
+.new p:nth-child(7){
+    border-bottom: none;
+}
+h1{
+    font-size: 55px;
+}
+.we-dive{
+    line-height: 30px;
+}
+/*Button read more*/
+.we-dive button{
+    background-color:  hsl(5, 85%, 63%);
+    color: white;
+    border: none;
+    padding: 4% 7%;
+    margin-top: 9%;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+.we-dive button:focus{
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+}
+/*Containers in bottom of the webpage*/
+.box{
+    display: flex;
+    line-height: 30px;
+}
+.box h3{
+    font-size: 23px;
+    color: hsl(236, 13%, 42%);
+}
+.box img{
+    height: 120px;
+    width: 120px;
+    margin-right: 2%;
+}
+.box p {
+    color: hsl(236, 13%, 42%);
+}
+.box button{
+    border: none;
+}
+.box button:focus{
+    color: hsl(5, 85%, 63%);
+}
+
+/*Footer*/
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
